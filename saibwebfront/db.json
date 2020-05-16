@@ -1,0 +1,240 @@
+{
+  "usuarios": [
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 2
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123456",
+      "id": 3
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123456",
+      "id": 4
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 5
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 6
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 7
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 8
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 9
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 10
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 11
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 12
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123",
+      "id": 13
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 14
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 15
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 16
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123456",
+      "id": 17
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 18
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 19
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "1234567890888888",
+      "id": 20
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "1234567890888888",
+      "id": 21
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "112",
+      "id": 22
+    },
+    {
+      "senha": "1",
+      "id": 23
+    },
+    {
+      "senha": "123456",
+      "id": 24
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "1",
+      "id": 25
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "1",
+      "id": 26
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "123456",
+      "id": 27
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 28
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 29
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 30
+    },
+    {
+      "usuario": "",
+      "id": 31
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 32
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 33
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 34
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 35
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 36
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 37
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 38
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 39
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "id": 40
+    },
+    {
+      "usuario": "",
+      "senha": "",
+      "id": 41
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "1",
+      "id": 42
+    },
+    {
+      "usuario": "contato@novodeck.com.br",
+      "senha": "1",
+      "id": 43
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 44
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 45
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 46
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 47
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 48
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 49
+    },
+    {
+      "usuario": "inforvendasgo@gmail.com",
+      "senha": "123",
+      "id": 50
+    }
+  ],
+  "clientes": [
+    {
+      "id": 17,
+      "nome": "teste"
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import ComponentsOverview from "./views/ComponentsOverview";
 import Tables from "./views/Tables";
 import BlogPosts from "./views/BlogPosts";
 import AtendimentosLista from "./views/AtendimentosLista";
+import EmpresaCadastro from "./views/Empresa";
 
 export default [
   {
@@ -25,6 +26,11 @@ export default [
     path: "/dasboard",
     layout: DefaultLayout,
     component: Dasboard
+  },
+  {
+    path: "/empresa",
+    layout: DefaultLayout,
+    component: EmpresaCadastro
   },
   {
     path: "/perfil-usuario",

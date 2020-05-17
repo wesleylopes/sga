@@ -2,10 +2,13 @@ import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UsuariosModule } from './usuarios/usuarios.module';
+import { ProdutosModule } from './produtos/produtos.module'; 
+import { EmpresasModule } from './empresas/empresas.module'; 
+import { AtendimentosModule } from './atendimentos/atendimentos.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [UsuariosModule,
+  imports: [UsuariosModule,ProdutosModule,EmpresasModule,AtendimentosModule,
   TypeOrmModule.forRoot({
     type: "postgres",
     host: "localhost",

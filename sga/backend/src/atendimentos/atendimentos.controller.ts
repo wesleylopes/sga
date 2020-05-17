@@ -24,7 +24,7 @@ export class AtendimentosController {
         return this.AtendimentosService.update(atendimentosDados);
     } 
 
-    @Delete(':id/deletar')
+    @Delete(':id/delete')
     async delete(@Param('id') id): Promise<any> {
       return this.AtendimentosService.delete(id);
     }  

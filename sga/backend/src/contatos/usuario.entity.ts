@@ -34,13 +34,5 @@ export class Usuario {
 
     @Column()
     url_foto:string;
-
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_cadastro;
-
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_alteracao;
    
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_alteracao;
 }

@@ -1,46 +1,70 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { 
+    Entity, 
+    Column, 
+    PrimaryGeneratedColumn,
+    CreateDateColumn,
+    UpdateDateColumn,
+    DeleteDateColumn,
+    VersionColumn 
+} from 'typeorm';
 
 @Entity()
 export class Empresa {
     @PrimaryGeneratedColumn()
-    id: number;
-
-    @Column()
-    emp_id : number;
-
-    @Column()
-    emp_padrao_id : number;
-
-    @Column()
-    pess_id : number;
-
-    @Column()
-    cate_id  : number;
+    id: number;   
     
     @Column()
     nome :string;
 
     @Column()
-    grupo_menu_id:number;
+    razao_social :string;
+
+    @Column()
+    cnpj :string;
+
+    @Column()
+    inscricao_estadual :string;
+
+    @Column()
+    inscricao_municipal :string;
+
+    @Column()
+    endereco :string;
+
+    @Column()
+    bairro :string;
+
+    @Column()
+    cidade :string;
+
+    @Column()
+    cep :string;
+
+    @Column()
+    email :string;
 
     @Column()
     situacao :string;
+    
+    @Column()
+    matriz : string; 
+    
+    @Column()
+    observacao :string;
 
     @Column()
-    logon:string;
+    url_logo:string;
 
-    @Column()
-    senha :string;
+    @CreateDateColumn()      
+    data_cadastro ; 
 
-    @Column()
-    url_foto:string;
+    @UpdateDateColumn() 
+    data_alteracao;
 
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_cadastro;
+    @DeleteDateColumn() 
+    data_delete; 
 
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_alteracao;
-   
-   // @Column({ type: 'datetime', default: 'now()'})
-   // data_alteracao;
+    @VersionColumn()
+    versao;
+
 }

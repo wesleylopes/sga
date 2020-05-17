@@ -9,12 +9,12 @@ import {
 from 'typeorm';
 
 @Entity()
-export class Atendimento {
+export class AtendimentoItem {
     @PrimaryGeneratedColumn()
     id: number;
 
     @Column()
-    empresa_id : number;
+    atendimento_id : number;
 
     @Column()
     cliente_id : number;
@@ -22,17 +22,14 @@ export class Atendimento {
     @Column()         
     usuario_id : number; 
 
-    @Column()          
-    origem_id : number; 
+    @Column()         
+    usuarios_envolvidos : number; 
 
-    @Column()
-    categorias :string; 
+    @Column()          
+    origem_id : number;    
 
     @Column()            
-    tags :string; 
-
-    @Column()      
-    titulo :string;   
+    tags :string;  
 
     @Column()      
     descricao:string; 
@@ -59,10 +56,7 @@ export class Atendimento {
     data_concluido;
 
     @Column()
-    horas_previsao : number; 
-
-    @Column()    
-    tempo_total : number;   
+    tempo : number; 
 
     @Column()
     relacionados :string;

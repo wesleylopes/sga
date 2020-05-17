@@ -1,14 +1,15 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { UsuariosModule } from './usuarios/usuarios.module';
+import { ContatosModule } from './usuarios/contatos.module';
 import { ProdutosModule } from './produtos/produtos.module'; 
 import { EmpresasModule } from './empresas/empresas.module'; 
 import { AtendimentosModule } from './atendimentos/atendimentos.module';
+import { AtendimentosItemModule } from './atendimentos/atendimentos_itens/atendimentosItem.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [UsuariosModule,ProdutosModule,EmpresasModule,AtendimentosModule,
+  imports: [ContatosModule,ProdutosModule,EmpresasModule,AtendimentosModule,AtendimentosItemModule, 
   TypeOrmModule.forRoot({
     type: "postgres",
     host: "localhost",

@@ -14,16 +14,16 @@ export class Usuario {
     id: number;
 
     @Column()
-    emp_id : number;
+    empresa_id : number;
 
     @Column()
-    emp_padrao_id : number;
+    empresa_padrao_id : number;
 
     @Column()
-    pess_id : number;
+    contato_id : number;
 
     @Column()
-    cate_id  : number;
+    categoria_id  : number;
     
     @Column()
     nome :string;

@@ -1,4 +1,12 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { 
+  Entity, 
+  Column, 
+  PrimaryGeneratedColumn, 
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  VersionColumn   
+} from 'typeorm';
 
 @Entity()
 export class Produto {
@@ -6,33 +14,48 @@ export class Produto {
     id: number;
 
     @Column()
-    emp_id : number;
+    empresa_id : number;
 
     @Column()
-    emp_padrao_id : number;
-
-    @Column()
-    pess_id : number;
-
-    @Column()
-    cate_id  : number;
+    categoria_id  : number; //Sistema, Modulo, Submodulo, Projeto, Pasta, Arquivo 
     
     @Column()
     nome :string;
 
     @Column()
-    grupo_menu_id:number;
+    nome_abreviado :string;
+
+    @Column()
+    nivel :string;
+
+    @Column()
+    nivel_superior :string;
+
+    @Column()
+    unidade :string;
+
+    @Column()
+    valor : number;
 
     @Column()
     situacao :string;
-
-    @Column()
-    logon:string;
-
-    @Column()
-    senha :string;
-
+    
     @Column()
     url_foto:string;
+
+    @Column()
+    observacao :string;
+
+    @CreateDateColumn()      
+    data_cadastro ; 
+
+    @UpdateDateColumn() 
+    data_alteracao;
+
+    @DeleteDateColumn() 
+    data_delete; 
+
+    @VersionColumn()
+    versao;
 
 }

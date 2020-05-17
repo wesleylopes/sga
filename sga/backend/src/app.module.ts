@@ -1,7 +1,9 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { ContatosModule } from './usuarios/contatos.module';
+import { ContatosModule } from './contatos/contatos.module';
+import { ClientesModule } from './clientes/clientes.module';
+import { UsuariosModule } from './usuarios/usuarios.module';
 import { ProdutosModule } from './produtos/produtos.module'; 
 import { EmpresasModule } from './empresas/empresas.module'; 
 import { AtendimentosModule } from './atendimentos/atendimentos.module';
@@ -9,7 +11,7 @@ import { AtendimentosItemModule } from './atendimentos/atendimentos_itens/atendi
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [ContatosModule,ProdutosModule,EmpresasModule,AtendimentosModule,AtendimentosItemModule, 
+  imports: [ClientesModule,ContatosModule,UsuariosModule,ProdutosModule,EmpresasModule,AtendimentosModule,AtendimentosItemModule, 
   TypeOrmModule.forRoot({
     type: "postgres",
     host: "localhost",

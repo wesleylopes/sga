@@ -1,4 +1,12 @@
-import { Entity, Column, PrimaryGeneratedColumn } from 'typeorm';
+import { 
+  Entity, 
+  Column, 
+  PrimaryGeneratedColumn, 
+  CreateDateColumn,
+  UpdateDateColumn,
+  DeleteDateColumn,
+  VersionColumn  
+} from 'typeorm';
 
 @Entity()
 export class Usuario {
@@ -34,5 +42,20 @@ export class Usuario {
 
     @Column()
     url_foto:string;
+
+    @Column()
+    observacao :string;
+
+    @CreateDateColumn()      
+    data_cadastro ; 
+
+    @UpdateDateColumn() 
+    data_alteracao;
+
+    @DeleteDateColumn() 
+    data_delete; 
+
+    @VersionColumn()
+    versao;
    
 }

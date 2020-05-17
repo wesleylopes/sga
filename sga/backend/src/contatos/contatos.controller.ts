@@ -3,7 +3,7 @@ import { Contato } from './contato.entity';
 import { ContatosService } from './contatos.service';
 import { Get, Post, Put, Delete, Body, Param } from  '@nestjs/common';
 
-@Controller('usuarios')
+@Controller('contatos')
 export class ContatosController {
     constructor(private ContatosService: ContatosService){}
     

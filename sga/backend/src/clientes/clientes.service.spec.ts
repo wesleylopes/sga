@@ -1,23 +1,21 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { UsuariosService } from './usuarios.service';
+import { ClientesService } from './clientes.service';
 import { InjectRepository} from '@nestjs/typeorm';
-import { Usuario} from './usuario.entity';
+import { Cliente} from './cliente.entity';
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-export class UsuariosService{
-  
-}
+export class clientesService{}
 
 describe('UsuariosService', () => {
-  let service: UsuariosService;
+  let service: ClientesService;
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
-      providers: [UsuariosService],
+      providers: [ClientesService],
     }).compile();
 
-    service = module.get<UsuariosService>(UsuariosService);
+    service = module.get<ClientesService>(ClientesService);
   });
 
   it('should be defined', () => {

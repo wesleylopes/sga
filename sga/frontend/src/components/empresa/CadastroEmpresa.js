@@ -19,7 +19,7 @@ import {
   
 export default  function  UserAccountDetails(){  
   const[id,setId] =useState(1);
-  const[nome,setNome] =useState("Wesley");
+  const[nome,setNome] =useState('');
   const[razao_social,setRazao_social] =useState('');
   const[cnpj,setCNPJ] =useState();
   const[inscricao_estadual,setInscricao_estadual] =useState();
@@ -56,11 +56,22 @@ async function handleRegistrar(e){
   try {
     const response = await api.post('empresas/',data);
     alert(  'Empresa cadastrada com sucesso! Novo Código : '+ response.data.id);
+
+    setId(response.data.id);
+    setNome(response.data.nome);
+    setRazao_social(response.data.razao_social);    
+
   }
   catch(err){
     alert('erro ao cadastar Empresa, tente novamente!')
   }
 };
+/*
+useEffect(()=>{
+  api.get('empresas/6').then(
+    response=>{
+      setId(response.data.id)
+    }});*/
   
 return(
 
@@ -209,7 +220,7 @@ return(
 
                 </Col>
               </Row>
-              <Button on theme="accent" type ="submit">Atualizar Cadastro</Button>
+              <Button on theme="accent" >Atualizar Cadastro</Button>
             </Form>
           </Col>
         </Row>

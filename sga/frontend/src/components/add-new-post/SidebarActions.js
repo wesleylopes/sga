@@ -55,6 +55,11 @@ const SidebarActions = ({ title }) => (
             <i className="material-icons">file_copy</i> Salvar Atendimento
           </Button>
           </Link>
+
+          <Button theme="accent" size="sm" className="ml-auto" type ="submit">
+            <i className="material-icons">file_copy</i> Salvar Atendimento 2
+          </Button>     
+
         </ListGroupItem>
       </ListGroup>
     </CardBody>

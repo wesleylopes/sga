@@ -14,7 +14,12 @@ export class EmpresasService {
         }
         async  findAll(): Promise<Empresa[]> {
             return await this.empresaRepository.find();
-        }        
+        }   
+        
+       async  findOne(empresa: Empresa): Promise<Empresa> {
+            return await this.empresaRepository.findOne(empresa);
+        } 
+
 
         async  create(empresa: Empresa): Promise<Empresa> {
             return await this.empresaRepository.save(empresa);

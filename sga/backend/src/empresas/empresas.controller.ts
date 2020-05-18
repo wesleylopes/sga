@@ -10,7 +10,12 @@ export class EmpresasController {
     @Get()
     index(): Promise<Empresa[]> {
       return this.EmpresasService.findAll();
-    }    
+    }   
+
+    @Get(':id')
+    findOne(@Param() empresaDados: Empresa): Promise<any> {
+      return this.EmpresasService.create(empresaDados);  
+    }
 
     @Post()
     async create(@Body() empresaDados: Empresa): Promise<any> {

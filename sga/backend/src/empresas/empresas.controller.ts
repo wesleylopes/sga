@@ -12,19 +12,19 @@ export class EmpresasController {
       return this.EmpresasService.findAll();
     }    
 
-    @Post('create')
+    @Post()
     async create(@Body() empresaDados: Empresa): Promise<any> {
       return this.EmpresasService.create(empresaDados);
     } 
 
-    @Put(':id/update')
+    @Put(':id')
     async update(@Param('id') id, @Body() empresaDados: Empresa): Promise<any> {
         empresaDados.id = Number(id);
         console.log('Update #' + empresaDados.id)
         return this.EmpresasService.update(empresaDados);
     } 
 
-    @Delete(':id/delete')
+    @Delete(':id')
     async delete(@Param('id') id): Promise<any> {
       return this.EmpresasService.delete(id);
     }  

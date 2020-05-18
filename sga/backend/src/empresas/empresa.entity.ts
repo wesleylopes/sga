@@ -13,58 +13,58 @@ export class Empresa {
     @PrimaryGeneratedColumn()
     id: number;   
     
-    @Column()
+    @Column({nullable: true})
     nome :string;
 
-    @Column()
+    @Column({nullable: true})
     razao_social :string;
 
-    @Column()
+    @Column({nullable: true})
     cnpj :string;
 
-    @Column()
+    @Column({nullable: true})
     inscricao_estadual :string;
 
-    @Column()
+    @Column({nullable: true})
     inscricao_municipal :string;
 
-    @Column()
+    @Column({nullable: true})
     endereco :string;
 
-    @Column()
+    @Column({nullable: true})
     bairro :string;
 
-    @Column()
+    @Column({nullable: true})
     cidade :string;
 
-    @Column()
+    @Column({nullable: true})
     cep :string;
 
-    @Column()
+    @Column({nullable: true})
     email :string;
 
-    @Column()
+    @Column({nullable: true})
     situacao :string;
     
-    @Column()
+    @Column({nullable: true})
     matriz : string; 
     
-    @Column()
+    @Column({nullable: true})
     observacao :string;
 
-    @Column()
+    @Column({nullable: true})
     url_logo:string;
 
-    @CreateDateColumn()      
+    @CreateDateColumn({nullable: true})      
     data_cadastro ; 
 
-    @UpdateDateColumn() 
+    @UpdateDateColumn({nullable: true}) 
     data_alteracao;
 
-    @DeleteDateColumn() 
+    @DeleteDateColumn({nullable: true}) 
     data_delete; 
 
-    @VersionColumn()
+    @VersionColumn({nullable: true})
     versao;
 
 }

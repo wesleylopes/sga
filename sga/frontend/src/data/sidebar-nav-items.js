@@ -9,12 +9,18 @@ export default function() {
     {
       title: "Novo Atendimento",
       htmlBefore: '<i class="material-icons">note_add</i>',
-      to: "/novo-atendimento",
+      to: "/novo-atendimento"
+    },       
+    {
+      title: "Lista de Atendimentos",
+      htmlBefore: '<i class="material-icons">note_add</i>',
+      to: "/atendimentos-lista",
     },       
     {
       title: "Lista de Atendimentos",
       htmlBefore: '<i class="material-icons">note_add</i>',
       to: "/atendimentos-lista",
     }
+
   ];
 }

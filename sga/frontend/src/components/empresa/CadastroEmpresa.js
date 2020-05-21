@@ -215,9 +215,7 @@ return(
                 {/* Description */}
                 <Col md="12" className="form-group">
                   <label htmlFor="feDescription">Observação</label>
-                  <FormTextarea id="feDescription" rows="5" value={observacao} onChange={(e) => setObservacao(e.target.value)}  />                
-                  
-
+                  <FormTextarea id="feDescription" rows="5" value={observacao} onChange={(e) => setObservacao(e.target.value)}  />              
                 </Col>
               </Row>
               <Button on theme="accent" >Atualizar Cadastro</Button>

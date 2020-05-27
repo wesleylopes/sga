@@ -182,7 +182,6 @@ return(
                   />
                 </Col>
               </Row>
-
               <Row form>
                 {/* City */}
                 <Col md="6" className="form-group">

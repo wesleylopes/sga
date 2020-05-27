@@ -11,14 +11,11 @@ const EmpresaCadastro = () => (
     <Row noGutters className="page-header py-4">
       <PageTitle title="Cadastro de Empresa > 1" subtitle="Edição/Leitura" md="12" className="ml-sm-auto mr-sm-auto" />
     </Row>
-    <Row>     
-      <Col lg="9">
+    <Row>  
+      <Col lg="12">
         <CadastroEmpresa />
-      </Col>
-      <Col lg="3">
-        <SidebarActions /> 
-        <SidebarCategories/>
-      </Col>
+      </Col>   
+     
     </Row>
   </Container>
 );

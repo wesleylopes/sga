@@ -1,17 +1,22 @@
+import { TicketsModule } from './tickets/tickets.module';
+import { TicketsController } from './tickets/tickets.controller';
+import { TicketsController } from './tickets.controller';
+import { TicketsController } from './tickets/tickets.controller';
+import { TicketsModule } from './tickets/tickets.module';
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { ContatosModule } from './contatos/contatos.module';
 import { ClientesModule } from './clientes/clientes.module';
-import { UsuariosModule } from './usuarios/usuarios.module';
 import { ProdutosModule } from './produtos/produtos.module'; 
 import { EmpresasModule } from './empresas/empresas.module'; 
-import { AtendimentosModule } from './atendimentos/atendimentos.module';
-import { AtendimentosItemModule } from './atendimentos/atendimentos_itens/atendimentosItem.module';
+
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 @Module({
-  imports: [ClientesModule,ContatosModule,UsuariosModule,ProdutosModule,EmpresasModule,AtendimentosModule,AtendimentosItemModule, 
+  imports: [
+        TicketsModule, 
+        TicketsModule, ClientesModule,ContatosModule,ProdutosModule,EmpresasModule, 
   TypeOrmModule.forRoot({
     type: "postgres",
     host: "localhost",
@@ -23,7 +28,10 @@ import { TypeOrmModule } from '@nestjs/typeorm';
     entities: [__dirname + '/**/*.entity{.ts,.js}'],
     synchronize: true,
  }),],
-  controllers: [AppController],
+  controllers: [
+        TicketsController, 
+        TicketsController, 
+        TicketsController, AppController],
   providers: [AppService],
 })
 export class AppModule {}

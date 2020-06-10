@@ -1,6 +1,4 @@
-import { TicketsModule } from './tickets/tickets.module';
-import { TicketsController } from './tickets/tickets.controller';
-import { TicketsController } from './tickets.controller';
+
 import { TicketsController } from './tickets/tickets.controller';
 import { TicketsModule } from './tickets/tickets.module';
 import { Module } from '@nestjs/common';
